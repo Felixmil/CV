@@ -1,6 +1,6 @@
 ---
-title: Nick Strayer's Resume"
-author: Nick Strayer
+title: Félix MIL résumé
+author: Félix MIL
 date: "`r Sys.Date()`"
 output:
   pagedown::html_resume:
@@ -48,80 +48,87 @@ Aside
 ================================================================================
 
 
-![logo](beta_dist.png){width=100%}
+![logo](me.jpeg){width=%}
 
 Contact {#contact}
 --------------------------------------------------------------------------------
 
 
 
-- <i class="fa fa-envelope"></i> nick.strayer@gmail.com
-- <i class="fa fa-twitter"></i> NicholasStrayer
-- <i class="fa fa-github"></i> github.com/nstrayer
-- <i class="fa fa-link"></i> [nickstrayer.me](http://nickstrayer.me/)
-- <i class="fa fa-phone"></i> (734) 645-0110
+- <i class="fa fa-envelope"></i> felixmil@outlook.com
+- <i class="fa fa-twitter"></i> felix_mil_
+- <i class="fa fa-github"></i> github.com/felixmil
+- <i class="fa fa-link"></i> [felixmil.github.io](http://felixmil.github.io/)
+- <i class="fa fa-phone"></i> 06 99 04 83 51
 
 
 
-Skills {#skills}
+Compétences {#skills}
 --------------------------------------------------------------------------------
 
 
-Highly experienced in
+**Programmation**
+  
+- Maitrise
+  - R
+  - Python
+  - SQL
+  
+- Experience
+  - PySpark
+  - Hive
+  
+**Scientifiques**
+
+- Biotechnologies
+  - Techniques de Diagnostic *In Vitro*
+  - Protéines Recombinantes
+- Statistiques
+  - Etudes Cliniques
+  - Plans d'experience
+- Biologie Moléculaire & Immunologie
+  
 
 
-- R 
-- Python
-- Javascript (d3.js)
-
-Experience with
 
 
-- Bash
-- SQL
-- C++
-- AWK
 
 
-Open Source Contributions {#open-source}
+<!-- Contributions Open Source {#open-source} -->
+<!-- -------------------------------------------------------------------------------- -->
+
+<!-- All projects available at `github.com/felixmil/` -->
+
+
+<!-- - `shinysense`: R package to use sensor data in Shiny apps -->
+<!-- - `tuftesque`: Hugo theme (behind LiveFreeOrDichotomize.com) -->
+<!-- - `slid3r`: D3 add-on for fully svg slider inputs -->
+
+
+Plus d'information {#more-info}
 --------------------------------------------------------------------------------
 
-All projects available at `github.com/nstrayer/<name>`
-
-
-- `shinysense`: R package to use sensor data in Shiny apps
-- `tuftesque`: Hugo theme (behind LiveFreeOrDichotomize.com)
-- `slid3r`: D3 add-on for fully svg slider inputs
-
-
-More info {#more-info}
---------------------------------------------------------------------------------
-
-See full CV at nickstrayer.me/cv for more complete list of positions and publications.
-
+CV complet à [felixmil.github.io/cv](felixmil.github.io/cv)
 
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
 
-Made w/ [**pagedown**](https://github.com/rstudio/pagedown). 
+Document généré sur R à l'aide de 📦 pagedown. (code: [github.com/felixmil/cv](https://github.com/felixmil/cv)).
 
-Source code: [github.com/nstrayer/cv](https://github.com/nstrayer/cv).
-
-Last updated on `r Sys.Date()`.
-
-
+<br>
+Mis à jour le `r Sys.Date()`.
 
 
 Main
 ================================================================================
 
-Nick Strayer {#title}
+Felix MIL {#title}
 --------------------------------------------------------------------------------
 
 ```{r}
-intro_text <- "I have made [visualizations viewed by hundreds of thousands of people](https://www.nytimes.com/interactive/2016/08/26/us/college-student-migration.html), [sped up query times for 25 terabytes of data by an average of 4,800 times](https://livefreeordichotomize.com/2019/06/04/using_awk_and_r_to_parse_25tb/), and built [packages for R](https://github.com/nstrayer/shinysense) that let you [do magic](http://nickstrayer.me/dataDayTexas/).
+intro_text <- "J'ai participé à la mise en place d'un datalake, à la structuration et à l'analyse de ses données pour répondre à des problématiques business relative à la performance, la detection d'anomalie, la maintenance et le comportement client.
 
-Currently searching for a data science position that allows me to build tools using visualization and machine learning to help people explore and understand their data. 
+Recherche actuellement un poste de Data Scientist me permettant de mettre en application mes qualités et compétences analytiques pour génerer de la valeur à partir de données et construire des outils de visualisation afin d'aider à l'exploration et à la comprehension.
 "
 
 
@@ -130,28 +137,28 @@ cat(sanitize_links(intro_text))
 
 
 
-Education {data-icon=graduation-cap data-concise=true}
---------------------------------------------------------------------------------
-
-```{r}
-position_data %>% print_section('education')
-```
-
-
-
-Selected Positions {data-icon=suitcase}
+Principales Expériences Professionelles {data-icon=suitcase}
 --------------------------------------------------------------------------------
 
 ```{r}
 position_data %>% print_section('positions')
 ```
 
-Selected Writing {data-icon=newspaper}
---------------------------------------------------------------------------------
 
+Projets Majeurs {data-icon=newspaper}
+--------------------------------------------------------------------------------
 
 ```{r}
 position_data %>% print_section('writings')
 ```
+
+
+Cursus {data-icon=graduation-cap data-concise=true}
+--------------------------------------------------------------------------------
+
+```{r}
+position_data %>% print_section('education')
+```
+
 
 

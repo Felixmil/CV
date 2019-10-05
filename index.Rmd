@@ -1,6 +1,6 @@
 ---
-title: "Nick Strayer's CV"
-author: Nick Strayer
+title: "Félix MIL"
+author: Félix MIL
 date: "`r Sys.Date()`"
 output:
   pagedown::html_resume:
