@@ -36,7 +36,7 @@ sup {
 /* Customize some of the sizing variables */
 :root {
   --sidebar-width: 12rem; /* Shrink sidebar width  */
-  --sidebar-background-color: #f7fbff; /* Make sidebar blue */
+  --sidebar-background-color: #0e6469; /* Make sidebar blue */
   --sidebar-horizontal-padding: 0.01in; /* Reduce sidebar padding */
   --decorator-outer-dim: 10px; /* Make position deliniating circles larger */
   --decorator-border: 2px solid #bdd7e7; /* Make timeline a blue as well*/
@@ -67,13 +67,14 @@ sup {
 
 /* Move closer to start and up towards header */
 .aside ul {
-  padding-left: 1rem;
+  padding-left: 0.4rem;
 }
 
 .aside li::before {
   position: relative;
   margin-left: -4.25pt;
   content: "• ";
+  
 }
 
 /* Make sure elements in asside are centered and have a nice small text */
@@ -81,6 +82,7 @@ sup {
   width: calc(var(--sidebar-width) + 9px);
   line-height: 1.2;
   font-size: 0.75rem;
+  color:#ffffff;
 }
 
 /* Make little circle outline be a light blue */
@@ -91,5 +93,25 @@ sup {
 /* Remove the fake bullets from lists */
 .aside li::before {
   content: auto;
+}
+
+.aside h2 {
+  color: #fff;
+}
+
+a {
+  text-decoration: solid;
+  color: #243254;
+}
+
+ul li ul li {
+    margin-left: 1rem;
+    list-style-type: circle;
+    line-height: 1.3;
+}
+
+.aside a {
+    text-decoration: underline;
+  color: #fff;
 }
 
