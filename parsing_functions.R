@@ -54,8 +54,7 @@ print_section <- function(position_data, section_id){
     pivot_longer(
       starts_with('description'),
       names_to = 'description_num',
-      values_to = 'description',
-      values_drop_na = TRUE
+      values_to = 'description'
     ) %>% 
     group_by(id) %>% 
     mutate(
@@ -71,6 +70,7 @@ print_section <- function(position_data, section_id){
       ),
       description_bullets = map_chr(descriptions, ~paste('-', ., collapse = '\n')),
     ) %>% 
+    mutate(description_bullets=str_remove_all(description_bullets,'\n?- NA')) %>% 
     strip_links_from_cols(c('title', 'description_bullets')) %>% 
     mutate_all(~ifelse(is.na(.), 'N/A', .)) %>% 
     glue_data(

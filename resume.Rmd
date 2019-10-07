@@ -39,7 +39,7 @@ position_data <- read_csv2('mypositions.csv') %>%
       section %in% c('data_science_writings', 'by_me_press') ~ 'writings',
       TRUE ~ section
     )
-  ) 
+  )  
 
 ```
 
@@ -48,7 +48,7 @@ Aside
 ================================================================================
 
 
-![logo](me.jpeg){width=%}
+![logo](me.jpeg){width=100%}
 
 Contact {#contact}
 --------------------------------------------------------------------------------
@@ -56,9 +56,9 @@ Contact {#contact}
 
 
 - <i class="fa fa-envelope"></i> felixmil@outlook.com
-- <i class="fa fa-twitter"></i> felix_mil_
-- <i class="fa fa-github"></i> github.com/felixmil
-- <i class="fa fa-link"></i> [felixmil.github.io](http://felixmil.github.io/)
+- <i class="fa fa-twitter"></i> [/felix_mil_ <i class="fa fa-external-link-alt fa-xs"></i>](https://twitter.com/felix_mil_)
+- <i class="fa fa-github"></i> [/felixmil <i class="fa fa-external-link-alt fa-xs"></i>](https://github.com/Felixmil) 
+- <i class="fab fa-linkedin-in"></i> [/felix-mil <i class="fa fa-external-link-alt fa-xs"></i>](http://felixmil.github.io/)
 - <i class="fa fa-phone"></i> 06 99 04 83 51
 
 
@@ -67,26 +67,35 @@ Compétences {#skills}
 --------------------------------------------------------------------------------
 
 
-**Programmation**
+**Programmation :**
   
-- Maitrise
+- Manipulation de données
   - R
   - Python
   - SQL
-  
-- Experience
-  - PySpark
   - Hive
   
-**Scientifiques**
+- Visualisation
+  - ggplot2
+  - Tableau, PowerBI
+  - D3.js
 
+  
+- Reporting
+  - Shiny
+  - Rmarkdown
+
+**Scientifiques :**
+
+- Statistiques
+  - Régression
+  - Classification
+  - Plan d'experience
+  
 - Biotechnologies
   - Techniques de Diagnostic *In Vitro*
-  - Protéines Recombinantes
-- Statistiques
-  - Etudes Cliniques
-  - Plans d'experience
-- Biologie Moléculaire & Immunologie
+  - Production de protéines recombinantes
+  - Génétique
   
 
 
@@ -108,12 +117,13 @@ Compétences {#skills}
 Plus d'information {#more-info}
 --------------------------------------------------------------------------------
 
-CV complet à [felixmil.github.io/cv](felixmil.github.io/cv)
+ - [felixmil.github.io/about <i class="fa fa-external-link-alt fa-xs"></i>](https://felixmil.github.io/about/)
+ - 
 
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
 
-Document généré sur R à l'aide de 📦 pagedown. (code: [github.com/felixmil/cv](https://github.com/felixmil/cv)).
+Document généré par R et <br>{pagedown} - [code <i class="fa fa-external-link-alt fa-xs"></i>](https://github.com/felixmil/cv)
 
 <br>
 Mis à jour le `r Sys.Date()`.
@@ -126,9 +136,9 @@ Felix MIL {#title}
 --------------------------------------------------------------------------------
 
 ```{r}
-intro_text <- "J'ai participé à la mise en place d'un datalake, à la structuration et à l'analyse de ses données pour répondre à des problématiques business relative à la performance, la detection d'anomalie, la maintenance et le comportement client.
+intro_text <- "J'ai participé à la mise exploittion d'un datalake, à la structuration et à l'analyse de ses données pour répondre à des problématiques business relatives à la performance, la détection d'anomalies, la maintenance et aux comportements clients.
 
-Recherche actuellement un poste de Data Scientist me permettant de mettre en application mes qualités et compétences analytiques pour génerer de la valeur à partir de données et construire des outils de visualisation afin d'aider à l'exploration et à la comprehension.
+Je recherche actuellement un poste de Data Scientist me permettant de mettre en application mes qualités et compétences pour générer de la valeur à partir de données mais aussi pour concevoir et développer des outils rendant l'analyse de données plus reproductible, transparente et accessible.
 "
 
 
@@ -145,11 +155,11 @@ position_data %>% print_section('positions')
 ```
 
 
-Projets Majeurs {data-icon=newspaper}
+Projets {data-icon=newspaper}
 --------------------------------------------------------------------------------
 
 ```{r}
-position_data %>% print_section('writings')
+position_data %>% print_section('project')
 ```
 
 
